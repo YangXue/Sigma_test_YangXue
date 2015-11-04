@@ -1,0 +1,25 @@
+<div>
+	<div class="page-container">
+		<time-input place-holder-text="torontoTimeInputPlaceHolder" label-text="'Set Toronto time'" set-time='torontoTime' on-click-function="setTorontoTime"></time-input>
+		<div style="clear:both">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<timer label-text="'Toronto:'" time="torontoTimeString" class-text="'bigTimer'"></timer>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<timer label-text="'London:'" time="londonTimeString" class-text="'smallTimer'"></timer>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<timer label-text="'Sydney:'" time="sydneyTimeString" class-text="'smallTimer'"></timer>
+			</div>
+		</div>
+		<hr>
+		<div>
+			Settings
+			<div class="row">
+				<time-input place-holder-text="londonTimeInputPlaceHolder" label-text="'Time difference for London'" set-time='londonTimeDifferenceBuffer' on-click-function="setLondonTime"></time-input>
+				<time-input place-holder-text="sydneyTimeInputPlaceHolder" label-text="'Time difference for Sydney'" set-time='sydneyTimeDifferenceBuffer' on-click-function="setSydneyTime"></time-input>
+			</div>
+		</div>
+	</div>
+</div>
